@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Calibri;
+}
+
+body{
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+.col-8 .jumbotron {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.col-2 .jumbotron , .col-2 .card  {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.top {
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-left: 25px;
+    height: 110px;
+    background: rgba(96, 96, 96, 0.9);
+    padding-right: 30px;
+}
+.top .logo {
+    float: left;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+.top .right{
+    float: right;
+    width: 25%;
+}
+
+.menu {
+    padding: 15px;
+    width: 90%;
+    display: flex;
+    margin-left: 63px;
+    margin-bottom: 5px;
+}
+
+.menu a {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+nav .menu {
+    margin-left: 400px;
+}
+
+nav .menu a {
+    margin-right: 100px;
+}
+
+.top .search {
+    width: 78%;
+    float: right;
+}
+
+h4 {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+nav {
+    margin: 10px;
+}
+
+.col-8, .col-2, .col-4{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
