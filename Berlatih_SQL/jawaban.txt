@@ -1,0 +1,58 @@
+1. Membuat Database
+CREATE DATABASE myshop;
+
+2. Membuat Tabel
+a. Tabel users
+CREATE TABLE users(
+    id int AUTO_INCREMENT PRIMARY KEY,
+    name varchar(255),
+    email varchar(255),
+    password varchar(255)
+);
+
+b. Tabel items
+CREATE TABLE items(
+    id int AUTO_INCREMENT PRIMARY KEY,
+    name varchar(255),
+    description varchar(255),
+    price int,
+    stock int,
+    category_id int,
+    FOREIGN KEY (category_id) REFERENCES categories(id)
+);
+
+c. Tabel categories
+CREATE TABLE items(
+    id int AUTO_INCREMENT PRIMARY KEY,
+    name varchar(255)
+);
+
+3. Memasukkan Data
+a. Tabel users
+INSERT INTO users VALUES
+('', 'John Doe', 'john@doe.com','john123'),
+('', 'Jane Doe', 'jane@doe.com','jenita123');
+
+b. Tabel categories
+INSERT INTO categories VALUES
+('', 'gadget'),
+('', 'cloth'),
+('', 'men'),
+('', 'women'),
+('', 'branded');
+
+c. Tabel items
+INSERT INTO items VALUES
+('', 'Sumsang b50', 'hape keren dari merek sumsang',4000000,100,1),
+('', 'Uniklooh', 'baju keren dari brand ternama',500000,50,2),
+('', 'IMHO Watch', 'jam tangan anak yang jujur banget',2000000,10,1);
+
+4. Mengambil data
+a. Data users
+SELECT id, name, email FROM users;
+
+b. Data items join kategori
+SELECT items i JOIN categories c ON i.category_id = c.id;
+
+5. Mengubah value pada tabel
+UPDATE items SET price = 2500000 WHERE name LIKE 'sumsang';
