@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Calibri;
+}
+
+body {
+  background-image: url("../img/pattern.jpg");
+}
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-left: 25px;
+  height: 50px;
+  background-color:white;
+  padding-right: 75px;
+}
+nav .logo {
+  float: left;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav .menu {
+  float: right;
+  padding: 15px;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .menu a {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color:black;
+  text-decoration: none;
+}
+
+h4 {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+  padding-top: 50px;
+  width: 1000px;
+  margin: auto;
+}
+
+.content h4 a {
+  font-size: 18px;
+}
+
+.content p {
+  padding-left: 20px;
+}
+
+.footer {
+  background-color: #373636;
+  height: 50px;
+  padding-top:15px;
+}
+.footer p{
+  font-size:12px;
+  text-align: center;
+  font-family: Arial;
+  color: white;
+}
+
+.space{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
