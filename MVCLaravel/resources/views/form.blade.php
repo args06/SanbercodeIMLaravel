@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+</head>
+<body>
+    <h1>Buat Account Baru!</h1>
+    <h2>Sign Up Form</h2>
+    <form action="/welcome" method="post">
+        @csrf
+        <div>
+            <p>First Name :</p>
+            <input type="text" name="firstName" required>
+        </div>
+        <div>
+            <p>Last Name :</p>
+            <input type="text" name="lastName" required>
+        </div>
+        <div>
+            <p>Gender :</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <p>Nationality :</p>
+            <select name="nationality" required>
+                <option>Indonesian</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div>
+            <p>Language Spoken :</p>
+            <input type="checkbox" name="lang1" value="Bahasa Indonesia">
+            <label>Bahasa Indonesia</label><br>
+            <input type="checkbox" name="lang2" value="English">
+            <label>English</label><br>
+            <input type="checkbox" name="lang3" value="Other">
+            <label>Other</label>
+        </div>
+        <div>
+            <p>Bio :</p>
+            <textarea name="bio" required></textarea>
+        </div>
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>
